@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Local Weather</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<div class="container-full wrapper">
+			<div class="row" id="header">
+				<div id="left-header" class="col-xs-12 col-sm-12 col-md-4 text-center">
+		   		<i class="fa fa-map-marker fa-4x"></i>
+					<span class="city"></span> ,
+					<span class="country"></span>
+		    	<div id="weather" class="row text-center">
+		      	<span id="font-icon"></span>
+		      	<span id="temperature"></span>
+					</div>
+					<br/>
+					<div id="weather2" class="row text-center">
+						<i class="wi wi-strong-wind"></i><span class="windSpeed"></span>
+					</div>
+		    </div>
+				<div id="front-header" class="col-xs-12 col-sm-12 col-md-4">
+					<h1 class="text-center">Local Weather</h1>
+					<h4 class="text-center">by Jack Stone</h4>
+		      <div class="row text-center">
+		      	<div class="btn-group" data-toggle="buttons">
+		  				<label class="btn btn-danger active">
+		    				<input type="radio" name="tempUnit" id="celsius" autocomplete="off" checked>Celsius
+		  				</label>
+		 					<label class="btn btn-primary">
+		    				<input type="radio" name="tempUnit" id="fahrenheit" autocomplete="off">Fahrenheit
+		  				</label>
+						</div>
+		      </div>
+		    </div>
+				<div id="right-header" class="text-center col-xs-12  col-sm-12 col-md-4">
+		      <div class="full-date"></div>
+			      <div class="date">
+				      <div class="month"></div>
+				      <div class="day"></div>
+				      <div class="year"></div>
+			      </div>
+		        <div class="full-time"></div>
+		    </div>
+			</div>
+		</div>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZrZqoOHm-4CVBfIDhYVNW7K29P9DxP6M&libraries=places&callback=initAutocomplete&language=en" async defer></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+	</body>
+</html>
